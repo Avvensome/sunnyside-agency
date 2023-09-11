@@ -64,6 +64,35 @@ function App() {
 					}
 				/>
 			</main>
+			<section className="testemonials">
+				<h3>client testemonials</h3>
+				<div className="testemonial-container"></div>
+			</section>
+			<section className="gallery">
+				<PictureWithOptionalText
+					srcDesktop={`images/desktop/image-gallery-milkbottles.jpg`}
+					srcMobile={`images/mobile/image-gallery-milkbottles.jpg`}
+					alt="milk bottles"
+				/>
+				<PictureWithOptionalText
+					srcDesktop={`images/desktop/image-gallery-orange.jpg`}
+					srcMobile={`images/mobile/image-gallery-orange.jpg`}
+					alt="orange"
+				/>
+				<PictureWithOptionalText
+					srcDesktop={`images/desktop/image-gallery-cone.jpg`}
+					srcMobile={`images/mobile/image-gallery-cone.jpg`}
+					alt="cone"
+				/>
+				<PictureWithOptionalText
+					srcDesktop={`images/desktop/image-gallery-sugarcubes.jpg`}
+					srcMobile={`images/mobile/image-gallery-sugarcubes.jpg`}
+					alt="sugar cubes"
+				/>
+			</section>
+			<footer>
+				<p>sunnyside</p>
+			</footer>
 		</>
 	);
 }
