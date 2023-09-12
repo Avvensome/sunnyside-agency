@@ -1,0 +1,130 @@
+/* Media Queries */
+@media (min-width: 1441px) {
+	main img {
+		width: 100%;
+		height: 100vh;
+	}
+}
+@media (min-width: 1440px) {
+	main img {
+		width: 100%;
+		height: 100vh;
+	}
+	.mobile-nav {
+		display: none;
+	}
+}
+
+@media (max-width: 375px) {
+	/* Header */
+	.header-container {
+		width: 650px;
+	}
+	.hamburger-menu {
+		width: 50px;
+	}
+	.desktop-nav {
+		display: none;
+	}
+	.image-header {
+		width: auto;
+		height: auto;
+	}
+	.header-container p {
+		font-size: 60px;
+	}
+	.header-title {
+		width: 750px;
+	}
+	.header-title h1 {
+		padding: 0px 100px;
+		font-size: 100px;
+	}
+	.header-title img {
+		height: 200px;
+	}
+	/* Main */
+	main {
+		grid-template-columns: 1fr;
+	}
+	.info-container {
+		text-align: center;
+		justify-content: center;
+	}
+	.info-container h2 {
+		width: auto;
+		padding: 0px 50px;
+	}
+	.info-container:first-child {
+		grid-row: 2;
+	}
+	.picture-container:nth-child(2) {
+		grid-row: 1;
+	}
+	.info-container {
+		padding: 80px 0;
+	}
+	.info-container h2 {
+		font-size: 45px;
+	}
+	.info-container p {
+		font-size: 35px;
+	}
+	.info-container span {
+		font-size: 25px;
+	}
+	.picture-text-container {
+		padding-top: 300px;
+	}
+	.picture-text-container h2 {
+		font-size: 50px;
+	}
+	.picture-text-container p {
+		font-size: 30px;
+		width: 650px;
+	}
+	/* Testimonials */
+	.testimonials {
+		display: flex;
+		align-items: center;
+		text-align: center;
+		flex-direction: column;
+		width: 750px;
+	}
+	.testimonial-container {
+		flex-direction: column;
+	}
+	.testimonials h3 {
+		font-size: 30px;
+	}
+	.testimonial-container img {
+		width: 100px;
+	}
+	.testimonial-container p {
+		font-size: 25px;
+	}
+	.testimonial-container h4,
+	.testimonial-container h5 {
+		font-size: 20px;
+	}
+	/* Gallery */
+	.gallery {
+		width: 750px;
+		grid-template-columns: 1fr 1fr;
+	}
+	/* Footer */
+	footer {
+		width: 750px;
+		height: auto;
+	}
+	footer p {
+		font-size: 50px;
+	}
+	.footer-menu p {
+		font-size: 30px;
+	}
+	.footer-media img {
+		width: 35px;
+		margin-right: 40px;
+	}
+}
