@@ -64,9 +64,35 @@ function App() {
 					}
 				/>
 			</main>
-			<section className="testemonials">
+			<section className="testimonials">
 				<h3>client testemonials</h3>
-				<div className="testemonial-container"></div>
+				<div className="testimonial-container">
+					<ClientTestimonial
+						imgSrc={"images/avatars/image-emily.jpg"}
+						imgAlt={"emily avatar"}
+						personName={"Emily R."}
+						personJobPosition={"Marketing Director"}
+						personTestimonal={
+							"We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit."
+						}
+					/>
+					<ClientTestimonial
+						imgSrc={"images/avatars/image-thomas.jpg"}
+						imgAlt={"Thomas Avatar"}
+						personName={"Thomas S."}
+						personJobPosition={"Chief Operating Officer"}
+						personTestimonal={`Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfing and enjoyable ezperience.`}
+					/>
+					<ClientTestimonial
+						imgSrc={"images/avatars/image-jennie.jpg"}
+						imgAlt={"Jennie avatar"}
+						personName={"Jennie F."}
+						personJobPosition={"Business Owner"}
+						personTestimonal={
+							"Incredible end result! Our sales increased over 400% when we wordked with Sunnyside. Highly recomended!"
+						}
+					/>
+				</div>
 			</section>
 			<section className="gallery">
 				<PictureWithOptionalText
@@ -99,9 +125,11 @@ function App() {
 				</div>
 				<div className="footer-media">
 					<img
+						className="icon"
 						src="images/icons/icon-facebook.svg"
 						alt="facebook logo"
 					/>
+
 					<img
 						src="images/icons/icon-instagram.svg"
 						alt="instagram logo"
@@ -167,6 +195,22 @@ function TextComponent({
 			<h2>{textTitle}</h2>
 			<p>{textDescription}</p>
 			<span>{textButton}</span>
+		</div>
+	);
+}
+function ClientTestimonial({
+	imgSrc,
+	imgAlt,
+	personTestimonal,
+	personName,
+	personJobPosition,
+}) {
+	return (
+		<div>
+			<img src={imgSrc} alt={imgAlt} />
+			<p>{personTestimonal}</p>
+			<h4>{personName}</h4>
+			<h5>{personJobPosition}</h5>
 		</div>
 	);
 }
