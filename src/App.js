@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 function PictureWithOptionalText({
 	srcDesktop,
 	srcMobile,
@@ -63,8 +65,25 @@ function ClientTestimonial({
 		</div>
 	);
 }
+function HamburgerMenu() {
+	return (
+		<div className="hamburger-menu">
+			<div className="triangle"></div>
+			<ul>
+				<ol>About</ol>
+				<ol>Services</ol>
+				<ol>Projects</ol>
+				<ol>
+					<button className="contact-btn-mobile">Contact</button>
+				</ol>
+			</ul>
+		</div>
+	);
+}
 
 function App() {
+	const [hamburgerMenu, setHamburgerMenu] = useState(false);
+	const isHamburgerOpen = () => setHamburgerMenu(!hamburgerMenu);
 	return (
 		<>
 			<header>
@@ -83,10 +102,12 @@ function App() {
 					</nav>
 					<nav className="mobile-nav">
 						<img
-							className="hamburger-menu"
+							className="hamburger-icon"
 							src="images/icons/icon-hamburger.svg"
 							alt="hamburger icon"
+							onClick={isHamburgerOpen}
 						/>
+						{hamburgerMenu && <HamburgerMenu />}
 					</nav>
 				</div>
 				<div className="header-title">
