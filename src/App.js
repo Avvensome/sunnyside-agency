@@ -216,7 +216,7 @@ function App() {
 				<p>sunnyside</p>
 				<div className="footer-menu">
 					<p>About</p>
-					<p>Srvices</p>
+					<p>Services</p>
 					<p>Projects</p>
 				</div>
 				<div className="footer-media">
